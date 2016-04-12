@@ -10,7 +10,11 @@ function Get-ResourcesFromARM {
         ($p -split ',')[0] -replace "'|\[|\(|resourceid",''        
     }
 
-    $r=(gc $fullname | ConvertFrom-Json).resources
+    #if(Test-Path $fullname) {
+        $r=(gc $fullname | ConvertFrom-Json).resources
+    #} else {
+    #    $r = (irm $fullname | ConvertFrom-Json).resources
+    #}
 
     $r  |% {    
         "$($_.type) [$(clean-dependson $_.dependson)]"
