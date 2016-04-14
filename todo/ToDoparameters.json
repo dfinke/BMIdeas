@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "siteName": {
+            "value": "ToDoApp4f66"
+        },
+        "hostingPlanName": {
+            "value": "ToDoApp4fc6"
+        },
+        "siteLocation": {
+            "value": "East US"
+        },
+        "sku": {
+            "value": "Free"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "repoUrl": {
+            "value": "https://github.com/azure-appservice-samples/ToDoApp"
+        },
+        "branch": {
+            "value": "master"
+        },
+        "sqlServerName": {
+            "value": "todoapp4fc6-server"
+        },
+        "sqlServerLocation": {
+            "value": "East US"
+        },
+        "sqlServerAdminLogin": {
+            "value": "myadmin"
+        },
+        "sqlServerAdminPassword": {
+            "value": "Hell0World!"
+        },
+        "sqlDbName": {
+            "value": "DemosDB"
+        },
+        "sqlDbCollation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "sqlDbEdition": {
+            "value": "Basic"
+        },
+        "sqlDbMaxSizeBytes": {
+            "value": "1073741824"
+        },
+        "sqlDbServiceObjectiveId": {
+            "value": "dd6d99bb-f193-4ec1-86f2-43d3bccbc49c"
+        }
+    }
+}
